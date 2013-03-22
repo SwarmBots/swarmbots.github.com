@@ -197,7 +197,7 @@ body {
 	font-family: 'RobotoThin', Arial, sans-serif;
 }
 
-h1, h2, p, li, .navbar .nav>li>a:hover {
+h1, h2, p, li, a, span, .navbar .nav>li>a:hover {
 	color: #FFFFFF;
 }
 
@@ -208,6 +208,14 @@ body, a, p, li, blockquote {
 hr+blockquote>p{
 	font-size: 22px;
 	font-weight: bolder;
+}
+
+p a, blockquote a {
+	color: #00FFFF;
+}
+
+p {
+	text-indent: 20px;
 }
 
 a:hover {
@@ -266,7 +274,7 @@ a:hover {
 	width: 100%;
 	text-align: center;
 	height: 150px;
-	padding-top: 80px;
+	padding-top: 50px;
 	background-color: #363636;
 	background-color: rgba(0, 0, 0, 0.25);
 }
@@ -287,6 +295,15 @@ a:hover {
 
 .content{
 	padding: 20px;
+}
+
+#disqus_thread{
+	margin-top: 45px;
+	padding: 20px;
+	background-color: #363636;
+	background-color: rgba(255, 255, 255, .5);
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 #main {

@@ -3,4 +3,15 @@ layout: page
 title: SwarmBots Home
 type: home
 ---
-	<h1>Under Construction</h1>
+
+<div>
+	<table>
+		{% for post in paginator.posts %}
+		<tr>
+			<span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{ post.title }}</h2></a></li>
+        {{ post.content | remove_first: post.title | truncatewords:150}}<br>
+            <a href="{{ post.url }}">Read more...</a><br><br>
+		</tr>
+		{% endfor %}
+	</table>
+</div>

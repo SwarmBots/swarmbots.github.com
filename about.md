@@ -11,7 +11,7 @@ permalink: /about/
 > SwarmBots is a project for the Principles of Engineering class at Olin College of Engineering in Needham, MA. 
 
 ## Project Goal
-> Create a platform of inexpensive, small robots, capable of achieving complex tasks through teamwork.
+> Create a platform of small robots capable of achieving complex tasks through teamwork, on a bduget of just $250.
 
 ## Minimum Deliverables
 > At minimum we want to make two robots able to navigate a known toy-world in a coordinated manner. This includes but is not limited to:

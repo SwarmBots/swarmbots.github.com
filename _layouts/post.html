@@ -11,18 +11,12 @@
 			<div class="navbar navbar-fixed-top">
 				<div id="brand"><a class="noStyle" href="/">SwarmBots</a></div>
 				<ul class="nav pull-right">
-				  <li {% if page.type == 'blog' %} class="active" {% endif %}><a href="/blog/">Blog</a></li>
-				  <li {% if page.type == 'team' %} class="active" {% endif %}><a href="/team/">Team</a></li>
-				  <li {% if page.type == 'about' %} class="active" {% endif %}><a href="/about/">About</a></li>
+				  <li class="active"><a href="/blog/">Blog</a></li>
+				  <li><a href="/team/">Team</a></li>
+				  <li><a href="/about/">About</a></li>
 				</ul>
 			</div>
 			<div class="container" id="main">
-				{% if page.type == 'home' %}
-				<div class="header">
-					<h2 class="animated fadeInLeft"> What would you do with $250</h2>
-					<h2 class="animated fadeInRight"> and a passion for robotics?</h2>
-				</div>
-				{% endif %}
 				<div class="content">
 					{{ content }}
 				</div>

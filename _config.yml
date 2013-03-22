@@ -4,6 +4,7 @@ server:      false
 server_port: 4000
 baseurl:    /jekyll_demo
 url: http://localhost:4000
+paginate: 10
 
 source:      .
 destination: ./_site
