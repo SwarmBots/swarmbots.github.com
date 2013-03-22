@@ -6,3 +6,5 @@ permalink: /blog/
 ---
 
 #Blog 
+
+<h2> Hello </h2>
