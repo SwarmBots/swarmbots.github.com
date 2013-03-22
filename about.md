@@ -2,7 +2,7 @@
 layout: page
 title: About Team SwarmBots
 type: about
-permalink: /about
+permalink: /about/
 ---
 
 #About
