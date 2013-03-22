@@ -21,7 +21,7 @@ permalink: /team/
 >
 
 ##Slater
-> Team member bio
+> Slater is also a sophomore at Olin College still struggling to be tied down to a major. He has passions for education, climate modelling, natural language processing, sustainability, and more things than he can really name.
 >
 
 
