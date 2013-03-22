@@ -197,7 +197,21 @@ body {
 	font-family: 'RobotoThin', Arial, sans-serif;
 }
 
-h1, h2, p, .navbar .nav>li>a:hover {
+h1, h2, p, li, .navbar .nav>li>a:hover {
+	color: #FFFFFF;
+}
+
+body, a, p, li, blockquote {
+	font-size: 17.5px;
+}
+
+hr+blockquote>p{
+	font-size: 22px;
+	font-weight: bolder;
+}
+
+a:hover {
+	text-decoration: none;
 	color: #FFFFFF;
 }
 
@@ -261,11 +275,18 @@ h1, h2, p, .navbar .nav>li>a:hover {
 	float: left;
 	display: block;
 	padding: 10px 20px 10px;
-	font-size: 28px;
 	margin-top: 16px;
+}
+
+#brand>a {
+	font-size: 28px;
 	font-weight: bolder;
 	color: #FFFFFF;
 	text-shadow: 0 1px 0 #333333;
+}
+
+.content{
+	padding: 20px;
 }
 
 #main {
