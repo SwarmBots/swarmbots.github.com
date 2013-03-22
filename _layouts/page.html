@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+		<link href="css/layout.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar navbar-fixed-top">
+				<div id="brand"><a class="noStyle" href="/">SwarmBots</a></div>
+				<ul class="nav pull-right">
+				  <li class="active"><a href="#">Blog</a></li>
+				  <li><a href="#">Team</a></li>
+				  <li><a href="#">About</a></li>
+				</ul>
+			</div>
+			<div class="container" id="main">
+				<div class="header">
+					<h2> social web + robotics</h2>
+				</div>
+				{{ content }}
+			</div>
+		</div>
+	</body>
+</html>
