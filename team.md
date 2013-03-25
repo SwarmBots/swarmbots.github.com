@@ -13,7 +13,7 @@ permalink: /team/
 >
 
 ##Dara
-> Team member bio
+> Dara is a sophomore at Babson College very passionate about Entrepreneurship and interested in Engineering.  Dara is also an aspiring music artist and businessman who cares about making the world a more interesting and understanding place. Find him and his crazy ideas on twitter [@thedarajams][].
 >
 
 ##Evan
@@ -26,3 +26,4 @@ permalink: /team/
 
 
 [@evanmsimpson]: http://twitter.com/evanmsimpson "evanmsimpson"
+[@thedarajams]: http://twitter.com/thedarajams "thedarajams"
