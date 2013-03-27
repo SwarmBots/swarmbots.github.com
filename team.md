@@ -9,7 +9,7 @@ permalink: /team/
 - - -
 
 ##Adela
-> Adela is a junior at Olin college studying Mechanical Engineering with a focus in Robotics.  Her passions for building and developing robot platforms have led her to work on omni-directional underwater vehicles to designing her own interactive robot from scratch.  You can find more info at her website [http://weeprojects.weebly.com] 
+> Adela is a junior at Olin college studying Mechanical Engineering with a focus in Robotics.  Her passions for building and developing robot platforms have led her to work on omni-directional underwater vehicles to designing her own interactive robot from scratch.  You can find more info at her website [http://weeprojects.weebly.com][] 
 >
 
 ##Dara
@@ -27,3 +27,4 @@ permalink: /team/
 
 [@evanmsimpson]: http://twitter.com/evanmsimpson "evanmsimpson"
 [@thedarajams]: http://twitter.com/thedarajams "thedarajams"
+[http://weeprojects.weebly.com]: http://weeprojects.weebly.com "weeprojects.weebly.com"
