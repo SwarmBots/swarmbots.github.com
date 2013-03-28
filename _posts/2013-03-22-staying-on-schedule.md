@@ -21,7 +21,6 @@ date: 2013-03-22 4:03:25
 
 {% include disqus.html %}
 
-{{ page.previous }} {{ page.next }}
 
 [GitHub]: http://github.com/Swarmbots "SwarmBots GitHub"
 
