@@ -18,7 +18,7 @@ date: 2013-03-27 3:30:25
 > - Just get something to work.  If we can lasercut wheels that fit nicely over the motors that may make for a better drivetrain.
 > - Lasercutting/waterjetting our parts out of more sintra, acrylic, or wood would probably help us achieve higher precision holes. We don't need the structural strength of a bent C.
 > - Although our first prototype was box shaped to keep things simple, the next one is going to be made closer to our original vision, which used a wedge. Since we won't have front axles, we'll have more space for electronics and won't be as constrained as before.
-<span class="center container"><img class="postImage" src="/img/chassis_1.JPG" alt="Original Vision" /></span>
+<div class="center container"><img class="postImage" src="/img/chassis_1.JPG" alt="Original Vision" /></div>
 
 
 {% include disqus.html %}
