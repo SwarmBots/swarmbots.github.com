@@ -197,7 +197,7 @@ body {
 	font-family: 'RobotoThin', Arial, sans-serif;
 }
 
-h1, h2, p, li, a, span, .navbar .nav>li>a:hover {
+h1, h2, h3, h4, h5, h6, p, li, a, span, .navbar .nav>li>a:hover {
 	color: #FFFFFF;
 }
 
