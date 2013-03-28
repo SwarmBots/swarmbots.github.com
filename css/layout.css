@@ -287,6 +287,10 @@ a:hover {
     height: 300px;
 }
 
+.bigImage{
+    height: 450px;
+}
+
 #brand {
 	float: left;
 	display: block;
