@@ -12,11 +12,12 @@
 	<body>
 		<div class="container">
 			<div class="navbar navbar-fixed-top">
-				<div id="brand"><a class="noStyle" href="/">SwarmBots</a></div>
+				<div id="brand"><a class="noStyle" href="http://swarmbots.herokuapp.com">SwarmBots</a></div>
 				<ul class="nav pull-right">
-				  <li {% if page.type == 'blog' %} class="active" {% endif %}><a href="/blog/">Blog</a></li>
+				  <li {% if page.type == 'home' %} class="active" {% endif %}><a href="/">Blog</a></li>
 				  <li {% if page.type == 'team' %} class="active" {% endif %}><a href="/team/">Team</a></li>
 				  <li {% if page.type == 'about' %} class="active" {% endif %}><a href="/about/">About</a></li>
+				  <li><a href="http://swarmbots.herokuapp.com">Back</a></li>
 				</ul>
 			</div>
 			<div class="container" id="main">
