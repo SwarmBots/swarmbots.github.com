@@ -9,7 +9,7 @@ date: 2013-04-04 2:01
 
 ##Power Consumption Calculations (per robot)
 | Item         | Qty | Voltage (V)| Amperage (mA) | Wattage   | Total Amperage| Total Wattage |
-|--------------| 2   |:----------:|--------------:|----------:|--------------:|--------------:| 
+|--------------| --- |:----------:|--------------:|----------:|--------------:|--------------:| 
 | H Bridges    | 2   | 5V         | 100 mA        | .5 Watts  |  200 mA       | 1 Watts       | 
 | Motors       | 2   | 5V         | 100 mA        | .5 Watts  |  200 mA       | 1 Watts       |
 | LEDs         | 2   | 5V         | 20 mA         | .1 Watts  |  40 mA        | 0.2 Watts     |
