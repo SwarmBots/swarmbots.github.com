@@ -19,6 +19,11 @@ date: 2013-04-04 2:01
 Total Wattage: 2.65 Watts
 Total Amperage: 467 mA
 
+So our plans for power are using 6 AAA alkaline batteries (which each have 1.5 V and 180 mAh)
+These consist of packs of three batteries in series with two of said packs in parallel for extra capacity.
+3 batteries gives us 4.5V with 180 mAh and 6 batteries in our configuration gives 360 mAh.
+Note that alkaline batteries under 500mA draw die quickly...
+
 {{ page.previous }} {{ page.next }}
 
 
