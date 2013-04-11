@@ -24,7 +24,7 @@ These consist of packs of three batteries in series with two of said packs in pa
 3 batteries gives us 4.5V with 180 mAh and 6 batteries in our configuration gives 360 mAh.
 Note that alkaline batteries under 500mA draw die quickly...
 
-{{ page.previous }} {{ page.next }}
+{% include disqus.html %}
 
 
 
