@@ -197,12 +197,26 @@ body {
 	font-family: 'RobotoThin', Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, a, span, .navbar .nav>li>a:hover {
+h1, h2, h3, h4, h5, h6, p, li, a, table, span, .navbar .nav>li>a:hover {
 	color: #FFFFFF;
 }
 
-body, a, p, li, blockquote {
+body, a, p, li, blockquote, table{
 	font-size: 17.5px;
+}
+
+
+
+td, th{
+    padding: 10px;
+}
+
+table{
+    margin: auto;
+}
+
+thead{
+    border-bottom: 2px solid white;
 }
 
 hr+blockquote>p{
