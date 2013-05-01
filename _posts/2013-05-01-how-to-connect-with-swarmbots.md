@@ -15,4 +15,4 @@ date: 2013-05-01 3:56:25
 >
 
 
-{% include disqus.html  
+{% include disqus.html %}
