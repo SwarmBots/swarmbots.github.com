@@ -1,6 +1,7 @@
 ---
 layout: post
 comments: true
+title: How to Connect With SwarmBots
 type: post
 date: 2013-05-01 3:56:25
 ---
