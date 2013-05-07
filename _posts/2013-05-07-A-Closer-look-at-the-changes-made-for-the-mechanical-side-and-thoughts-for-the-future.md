@@ -23,6 +23,9 @@ date: 2013-05-07 10:50
 >Robots assembled 4/30/13. Used metal L-brackets lying around in PoE room and balsa wood and cardstock to attach mouse encoder to bottom of robot.  Even at larger scale, difficult to grab parts and pieces inside body of bot.  Decided to mount electronics on top.
 
 
+Future considerations:
+There are some changes that should probably happen to the CAD to make them easier to assemble in order to put together robots without gluing them together, but that will be left up to the next group who will work on this.
+
 
 
 >Recommendations for future teams:
