@@ -8,7 +8,7 @@ date: 2013-05-07 0:58
 
 ##Drawing Package
 
-All detailed drawings and part files can be found at our Github: https://github.com/SwarmBots/SwarmBotsCAD/
+All detailed drawings and part files can be found at our Github: <a href ="https://github.com/SwarmBots/SwarmBotsCAD/">SwarmBotsCAD</a>
 
 Part drawings for the robot frame are shown below.
 
