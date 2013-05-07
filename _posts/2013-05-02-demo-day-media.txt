@@ -1,0 +1,17 @@
+---
+layout: post
+comments: true
+title: Demo Day Media
+type: post
+date: 2013-05-02  23:00
+---
+
+##Demo Day Media
+
+>This includes some videos we took beforehand to see if the robot would respond when we tweeted at it.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/YNOLg6Pezoo" frameborder="0" allowfullscreen></iframe>
+
+
+
+{% include disqus.html %}
