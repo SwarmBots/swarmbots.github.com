@@ -27,6 +27,8 @@ date: 2013-04-29 20:01
 >Note that you could reduce costs by choosing to build your own arduino from scratch.  
 >## List of Recommended Materials
 
-
+Acrylic Sheet (You can get a 20" x 32" x 0.093" sheet from Home Depot for about $15)
+Jumper Cables (Alternatively you could make your 
 
 {% include disqus.html %}
+
