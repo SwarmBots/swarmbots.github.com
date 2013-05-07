@@ -9,7 +9,7 @@ type: home
 		{% for post in paginator.posts %}
 		<tr>
 			<span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}"><h2>{{ post.title }}</h2></a></li>
-        {{ post.content | remove_first: post.title | truncatewords:10}}<br>
+        {{ post.content | remove_first: post.title | truncatewords:30}}<br>
             <a href="{{ post.url }}">Read more...</a><br><br>
 		</tr>
 		{% endfor %}

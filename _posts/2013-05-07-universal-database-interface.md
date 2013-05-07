@@ -51,3 +51,5 @@ date: 2013-05-07 1:59
       get(collection, uid, callback);
     }
 
+
+{% include disqus.html %}
