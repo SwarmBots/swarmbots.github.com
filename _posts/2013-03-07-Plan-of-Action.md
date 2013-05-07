@@ -1,12 +1,13 @@
 ---
 layout: post
 comments: true
-title: Plan of Action (our proposal)
+title: Plan of Action
 type: post
 date: 2013-03-07  23:00
 ---
 
-##Our Proposal
+##Plan of Action
+###(Our Proposal)
 
 >We anticipate having two robotic vehicles that can navigate in a hard coded virtual world without running into each other.  
 >These robots will have some degree of location awareness, move in sync, and communicate to each other. 
