@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Bill of Materials (for each Robot) 
 type: blog
-date: 2013-04-29 20:01
+date: 2013-05-06 20:01
 ---
 
 | Subsystem     | Item (file name if applicable)                  | Qty | Material     | Cost |  Subtotal  |Website (if Applicable)   |
