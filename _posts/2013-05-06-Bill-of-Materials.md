@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Bill of Materials (for each Robot) 
+title: Bill of Materials
 type: blog
 date: 2013-05-06 20:01
 ---
