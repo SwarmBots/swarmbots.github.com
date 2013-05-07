@@ -20,9 +20,9 @@ date: 2013-04-30 17:00
 >Purchase fender washers to more evenly distribute the force to hold down the wheels.
 >Due to the fact that we ended up using an arduino, it would probably be beneficial to make the robot slightly larger/manufacture a robot with a shelf in it and take out one of the cross braces.  The shelf would add stability to the structure and would probably make the robot sound enough to remove the back crossbrace.
 
-<div class="center container"><img class="postImage" src="/img/latestCAD.JPG" alt="Figure 1. CAD of final chassis (rev 4)" /></div>
-<div class="center container"><img class="postImage" src="/img/P5011437.JPG" alt="Figure 4. Robot, assembled!" /></div>
-<div class="center container"><img class="postImage" src="/img/P5011442.JPG" alt="Figure 2. Battery mount = hot glued L brackets to backs of motors" /></div>
+<div class="left container"><img class="postImage" src="/img/latestCAD.JPG" alt="Figure 1. CAD of final chassis (rev 4)" /></div>
+<div class="center container"><img class="postImage" src="/img/assembledrobot.JPG" alt="Figure 4. Robot, assembled!" /></div>
+<div class="right container"><img class="postImage" src="/img/P5011442.JPG" alt="Figure 2. Battery mount = hot glued L brackets to backs of motors" /></div>
 
 
 
