@@ -179,6 +179,7 @@ date: 2013-05-07 1:58
 	        }
 	      }
 
+	      // Add he next move from the database to the local queue.
 	      var getNextMove = function(){
 	        mongo.getQueue(db, function (err, queue){
 	          if (queue.length > 1){
@@ -189,10 +190,6 @@ date: 2013-05-07 1:58
 	            dispatch();
 	          });
 	        });
-	      }
-
-	      var sendNextMove = function(message){
-	        dispatchQueue.push(message);
 	      }
 	    
 	      // Write the next message out to serial.
