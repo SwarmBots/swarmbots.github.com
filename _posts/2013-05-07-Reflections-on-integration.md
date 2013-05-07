@@ -28,8 +28,9 @@ Important pivot points:
 
 >Recommendations for future teams:
 
-Make a fully integrated prototype early on.  Even if you have lots of iterations on the mechanical side, having iterations on the electrical side would help a lot with the process too.  
-There are always bugs no matter what system you're building.  The electrical system went through many hiccups because we were unclear about the types of batteries we would be able to use to drive our robot (the amperage your batteries can give without dying instantaneously is hugely important!), we didn't buy the right type of Arduino compatible AT Mega 328 chips (and if you pay a dollar more you can get them flashed), and we didn't fabricate the boards early enough to realize most of these issues until pretty late in the semester.
-Follow through with the plan you make. Edit the plan as necessary but keep referring to it.  If we had designated someone to keep us on track we probably would have been more efficent throughout the project.
+>Start with the point between two projects. We started building out software and individual electronics and didn't really work towards the radio communication and on-chip Arduino code until later. We should have started with a robust radio connection, and then filled out the software and electrical components the project would have gone more smoothly.
+>Make a fully integrated prototype early on.  Even if you have lots of iterations on the mechanical side, having iterations on the electrical side would help a lot with the process too.  
+>There are always bugs no matter what system you're building.  The electrical system went through many hiccups because we were unclear about the types of batteries we would be able to use to drive our robot (the amperage your batteries can give without dying instantaneously is hugely important!), we didn't buy the right type of Arduino compatible AT Mega 328 chips (and if you pay a dollar more you can get them flashed), and we didn't fabricate the boards early enough to realize most of these issues until pretty late in the semester.
+>Follow through with the plan you make. Edit the plan as necessary but keep referring to it.  If we had designated someone to keep us on track we probably would have been more efficent throughout the project.
 
 {% include disqus.html %}
