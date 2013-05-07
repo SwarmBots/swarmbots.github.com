@@ -20,8 +20,6 @@ Part drawings for the robot frame are shown below.
 <div class="center container"><img class="bigImage" src="/img/500-spacer.jpg" alt="figure 6. 0.500 inch diameter spacer" /></div>
 <div class="center container"><img class="bigImage" src="/img/frame-assem.jpg" alt="figure 7. frame assembly" /></div>
 </br>
->
-> The above is the proposed structure for the communication path for getting user commands to the individual robots.
 
 
 
