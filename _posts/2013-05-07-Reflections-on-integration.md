@@ -22,8 +22,8 @@ Important pivot points:
 >Additionally, we wanted to engrave "Olin SwarmBots" on our robot, which turned out to be much more difficult than anticipated (changing line thickness/color of text is not trivial in Solidworks).
 >2nd and 3rd pass of lasercut parts done 4/29/13 -- manufactured two different designs to see if one would work better than the other. Spring loaded iteration worked well but still needed glue to hold in place.
 >Crossbraces allowed for easier gluing of pieces at 90 degree angles. Much stiffer box.
->Robots assembled with electronics 5/1/13. Radios suddenly broke; not enough experience on team to know if it was due to radio chips being fragile or code library changes.  Luckily Luke Metz was free to drop by and help with the C code.
->Demo Day 5/2/13. Could only move robot forwards through a twitter command.  Did not have enough code onboard arduino to execute more commands at this time.
+>Robots assembled with electronics 5/1/13. Radios suddenly broke; not enough experience on team to know if it was due to radio chips being fragile or code library changes. Changed to Mirf library and luckily Luke Metz was free to drop by and help with the C code.
+>Demo Day 5/2/13. Could only move robot forwards through a twitter command. Nominally had the capabilities for more complex turning and speed control, but our eventual radio message relied heavily on bit-hacking, which wasn't amenable to substantive message changes.
 
 
 >Recommendations for future teams:
