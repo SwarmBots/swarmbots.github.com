@@ -13,5 +13,10 @@ type: home
             <a href="{{ post.url }}">Read more...</a><br><br>
 		</tr>
 		{% endfor %}
+		{% if paginator.next_page %}
+		    <p class="next">
+		      <a href="{{ paginator.next_page_path }}">Next</a>
+		    </p>
+		{% endif %}
 	</table>
 </div>

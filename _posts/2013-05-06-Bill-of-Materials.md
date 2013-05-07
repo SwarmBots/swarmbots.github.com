@@ -8,8 +8,15 @@ date: 2013-05-06 20:01
 
 ##Bill of Materials
 
->### List of Recommended Materials
-> 
+>#### List of Recommended Materials
+>
+>BOM Reflects current design of swarmbot.
+>
+>Note that you could reduce costs by choosing to build your own arduino from scratch.  
+>
+>Acrylic Sheet (You can get a 20" x 32" x 0.093" sheet from Home Depot for about $15)
+>
+>Jumper Cables (Alternatively you could make your 
 
 
 | Subsystem     | Item (file name if applicable)                  | Qty | Material     | Cost |  Subtotal  |Website (if Applicable)   |
@@ -30,13 +37,7 @@ date: 2013-05-06 20:01
 <br/>
 
 
->BOM Reflects current design of swarmbot.
->
->Note that you could reduce costs by choosing to build your own arduino from scratch.  
->
->Acrylic Sheet (You can get a 20" x 32" x 0.093" sheet from Home Depot for about $15)
->
->Jumper Cables (Alternatively you could make your 
+
 
 {% include disqus.html %}
 
