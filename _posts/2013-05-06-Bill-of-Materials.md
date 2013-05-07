@@ -9,7 +9,7 @@ date: 2013-05-06 20:01
 ##Bill of Materials
 
 >### List of Recommended Materials
->
+> 
 
 
 | Subsystem     | Item (file name if applicable)                  | Qty | Material     | Cost |  Subtotal  |Website (if Applicable)   |
