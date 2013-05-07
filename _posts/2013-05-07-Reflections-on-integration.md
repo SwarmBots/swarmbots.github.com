@@ -30,6 +30,6 @@ Important pivot points:
 
 Make a fully integrated prototype early on.  Even if you have lots of iterations on the mechanical side, having iterations on the electrical side would help a lot with the process too.  
 There are always bugs no matter what system you're building.  The electrical system went through many hiccups because we were unclear about the types of batteries we would be able to use to drive our robot (the amperage your batteries can give without dying instantaneously is hugely important!), we didn't buy the right type of Arduino compatible AT Mega 328 chips (and if you pay a dollar more you can get them flashed), and we didn't fabricate the boards early enough to realize most of these issues until pretty late in the semester.
-
+Follow through with the plan you make. Edit the plan as necessary but keep referring to it.  If we had designated someone to keep us on track we probably would have been more efficent throughout the project.
 
 {% include disqus.html %}
