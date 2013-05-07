@@ -48,6 +48,12 @@ date: 2013-05-07 1:58
 	// Start connection to MongoDB. Make sure your environment variables have been configured.
 	MongoClient.connect(process.env.SWARMBOTS_MONGO_URI, function (err, db){
 
+> Next, we will use Rem.js to connect to twitter and open a stream.
+> We want to configure the stream to filter out a keyword that we will listen for and intercept.
+> For our purposes, we will be listening for the use of the word 'SwarmBots.'
+> Everytime the stream finds a relevant tweet, it gets collected by our Carrier until the full text has been received.
+> Then, we pass the tweet off into our control system.
+
 	  // Create Twitter API, prompting for key/secret.
 	  var tw = rem.connect('twitter.com', 1).configure({
 	    'key': process.env.TW_SWARMBOTS_KEY,
@@ -62,6 +68,10 @@ date: 2013-05-07 1:58
 	        }
 	      });
 	    });
+
+> The first step in our message's journney is to be parsed for logistical information.
+> Here we are just getting some basic user data so we can show who is using SwarmBots on our website.
+> Then, se send the packaged information off to our command checker.
 	    
 	    var parseTweet = function(json){
 	      //console.log(json.id_str, json.text, json.user);
@@ -72,46 +82,27 @@ date: 2013-05-07 1:58
 	      }    
 	    }
 
-	    var autoRespond = function(screen_name){
-	      user('statuses/update').post({
-	        status: "@" + screen_name + " thanks for the interest, but we aren't accepting commands just yet."
-	      }, function (err, json){
-	        console.log("Posted");
-	      });
-	    }
+> He you can write your own custom code to look for any specific command and pass that off for submission.
+> In this example, we will just pass commands straight through, and assign them to an arbitrary bot.
 
 	    var checkValidCommand = function(text, user_info, screen_name){
 	      text = text.toLowerCase();
-	      if (text.indexOf("@IntroduceMeTo") > -1){
-	        sayHello(screen_name);
-	      }else{
-	        if (text.indexOf("blue") > -1){
-	          submitCommand("blue", user_info)
-	          acceptCommand(screen_name);
-	        }else if (text.indexOf("green") > -1){
-	          submitCommand("green", user_info)
-	          acceptCommand(screen_name);
-	        }else if (text.indexOf("red") > -1){
-	          submitCommand("red", user_info)
-	          acceptCommand(screen_name);
-	        }else if (text.indexOf("pink") > -1){
-	          submitCommand("pink", user_info)
-	          acceptCommand(screen_name);
-	        }else if (text.indexOf("yellow") > -1){
-	          submitCommand("yellow", user_info)
-	          acceptCommand(screen_name);
-	        }else{
-	          submitCommand("blue", user_info)
-	          acceptCommand(screen_name);
-	        }
+	      var bot = "bot0";
+	      if (isValid(text)){
+	        submitCommand(bot, user_info)
+	        acceptCommand(screen_name);
 	      }
 	    }
 
+	    var isValid = function(command) {
+	    	//write your own validation here.
+	    }
+
+> Here our submission function pushes the new command to the database.
+> In this instance, we are using a shared Queue, but you could just as easily have a separate queue for each one of your bots.
+
 	    var submitCommand = function(bot, json){
 	      mongo.getSwarmBot(db, bot, function (err, sb){
-	        /*if (!sb.queue){
-	          sb.queue = [];
-	        }*/
 	        mongo.getQueue(db, function (err, queue){
 	          if(queue.people.indexOf(json.sid) > -1){
 	            declineDuplicate(json.user.screen_name);
@@ -127,6 +118,9 @@ date: 2013-05-07 1:58
 	      });
 	    } 
 
+> The following is just an example of some reciept messages you can send to users, and how to send them.
+>
+		// Create a queue of tweets to be sent out.
 	    var tweetQueue =[];
 
 	    var acceptCommand = function(screen_name){
@@ -137,10 +131,6 @@ date: 2013-05-07 1:58
 	      tweetQueue.push("@" + screen_name + " you have successfully moved our bots! Thanks!");
 	    }
 
-	    var sayHello = function(screen_name){
-	      tweetQueue.push("@" + screen_name + " no need to go through them. Hi!");
-	    }
-
 	    var declineDuplicate = function(screen_name){
 	      tweetQueue.push("@" + screen_name + " sorry, you can only be in the queue once. Try again once your turn is up!");
 	    }
@@ -149,6 +139,7 @@ date: 2013-05-07 1:58
 	      tweetQueue.push("@" + screen_name + " that is an invalid command.");
 	    }
 
+	    // How we actually send a tweet, using Rem.js.
 	    var tweet = function(){
 	      if (tweetQueue.length > 0){
 	        user('statuses/update').post({
@@ -159,30 +150,39 @@ date: 2013-05-07 1:58
 	      }
 	    }
 
+	    // We need to rate limit our tweets to keep Twitter happy.
 	    setInterval(tweet, 60000);
 
+> Finally, we will get into sending and receiving messages with the master Arduino.
+>
 
+		// Used to hold outgoing messages.
 	    var dispatchQueue = [];
 
-
-
+	    // Open a serial connection with our Arduino.
 	    serialPort.open(function () {
+	      // Listen for any returning messages, send them to the parser.
 	      serialPort.on('data', function(data) {
-	        //parseMessage(data);
+	        parseMessage(data);
 	        console.log(data);
 	      });
 	    
 	      var parseMessage = function(message){ 
 	        if(message.indexOf('response:') > -1){
+	          // If this is a response, get the message
+	          // In this example, the message is encoded in the last 4 characters.
 	          var resp = message.substring(message.length - 4, message.length)
-	          getNextMove(resp.split(""));
+	          if (resp != '0000'){
+	          	// If the bot is ready, get the next move and dispatch it.
+	          	getNextMove();
+	          }
 	        }
 	      }
 
-	      var getNextMove = function(data){
+	      var getNextMove = function(){
 	        mongo.getQueue(db, function (err, queue){
-	          if (queue.people.length > 1){
-	            dispatchQueue.push(queue.people.shift());
+	          if (queue.length > 1){
+	            dispatchQueue.push(queue.shift());
 	            console.log(dispatchQueue);
 	          }
 	          mongo.updateQueue(db, queue, function (){
@@ -191,35 +191,27 @@ date: 2013-05-07 1:58
 	        });
 	      }
 
-	      var packageNewMessage = function(json){
-	        var message = json.client + json.bot + json.x.toString() + json.y.toString();
-	        sendNextMove(message);
-	      }
-
 	      var sendNextMove = function(message){
 	        dispatchQueue.push(message);
 	      }
 	    
+	      // Write the next message out to serial.
 	      var dispatch = function(){
 	        if(dispatchQueue.length > 0){
 	          console.log("Writing to serial...");
-	          dispatchQueue.shift()
-	          serialPort.write("1234");
+	          message = dispatchQueue.shift()
+	          serialPort.write(message);
 	        }
 	      }
 
-	      var testMessage = function(){
-	        console.log("Writing test message...");
-	        serialPort.write("1234");
-	      }
-
-	      //setInterval(testMessage, 5000);
-	      setInterval(getNextMove, 1000);
-
 	    });
-	    
-	    
-
-	    
 	  });
-	});
+
+
+The full source code can be found on the [SwarmBots GitHub page][].
+
+
+[SwarmBots GitHub page]: http://github.com/Swarmbots "SwarmBots GitHub"
+
+
+{% include disqus.html %}
